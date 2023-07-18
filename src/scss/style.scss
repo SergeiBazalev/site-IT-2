@@ -1,0 +1,281 @@
+@import "fonts";
+@import "colors";
+@import "nulling-styles";
+@import "header";
+@import "footer";
+@import "main-block";
+
+
+body {
+   font-family: Rubik, sans-serif;
+   font-size: 14px;
+   line-height: 19px;
+   color: $white;
+   background-color: $blue-900;
+}
+
+.wrapper {
+   max-width: 1160px;
+   margin: 0px auto;
+}
+
+.description {
+   background: linear-gradient(0deg, rgba(25, 25, 40, 0.5) -9.89%, rgba(42, 40, 74, 0.5) 100%);
+
+   &__container {
+      padding: 32px 20px;
+   }
+
+   &__content {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-bottom: 14px;
+
+      &::before {
+         position: absolute;
+         content: "";
+         top: 0;
+         bottom: 0;
+         width: 6px;
+         border-radius: 10px;
+         background: linear-gradient(180deg, #F7114E 0%, rgba(247, 17, 78, 0) 100%);
+      }
+
+      &_text {
+         margin-left: 28px;
+         line-height: 17px;
+         padding: 10px;
+      }
+   }
+
+   &__caption {
+      display: flex;
+      align-items: center;
+
+      &_icon {
+         width: 64px;
+         height: 64px;
+         border-radius: 50%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color: $blue-900;
+         img {
+            width: inherit;
+            height: inherit;
+         }
+      }
+
+      &_name {
+         margin-left: 25px;
+         color: $gray-300;
+         font-weight: 500;
+      }
+   }
+}
+
+@media (min-width: 768px) {
+  
+   .description {
+      &__caption_name {
+         font-size: 18px;
+      }
+      &__container {
+         padding: 32px 40px;
+      }
+      &__content {
+         margin-bottom: 32px;
+         &_text {
+            font-size: 18px;
+            line-height: 21px;
+         }
+      }
+   }
+}
+
+.title {
+   font-size: 25px;
+   font-weight: 500;
+   line-height: normal;
+}
+.stack {
+   &__container {
+      padding: 30px 20px 42px 20px;
+   }
+
+   &__title {
+      margin-bottom: 40px;
+   }
+
+   &__scroll {
+      overflow-x: scroll;
+   }
+  
+   &__row {
+      display: inline-flex;
+      margin-bottom: 16px;
+   }
+
+   &__caption {
+      padding: 16px 20px 0 0;
+      color: $gray-300;
+   }
+   
+   &__border{
+      border-radius: 20px;
+      background: linear-gradient(0deg, #F7114E 0%, rgba(247, 17, 78, 0) 57.06%);
+      &:not(:first-child){
+         margin-left: 25px;
+      }
+   }
+   
+   &__column {
+      margin: 1px;
+      box-sizing: border-box;
+      width: 230px;
+      height: 394px;
+      border-radius: 20px;
+      background: linear-gradient(0deg, #222139, #222139);
+   }
+
+   &__image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 174px;
+      padding-top: 10px;
+   }
+
+   &__text {
+      padding: 28px 19px 19px 19px;
+   }
+}
+
+@media (min-width: 768px) {
+  
+   .title {
+      font-size: 35px;
+      line-height: 42px;
+   }
+
+   .stack {
+      &__container {
+         padding: 30px 40px 42px;
+      }
+      &__column {
+         width: 249px;
+      }
+      &__caption {
+         padding-right: 0px;
+         font-size: 18px;
+      }
+      &__title {
+         margin-bottom: 42px;
+      }
+      &__text {
+         font-size: 16px;
+      }
+   }
+   
+}
+
+@media (min-width: 1160px) {
+   .stack {
+      &__container {
+         padding: 74px 40px 64px;
+      }
+      &__scroll {
+         overflow-x: hidden;
+      }
+   }
+}
+
+
+.advantages {
+
+   &__container {
+      padding: 0 20px;
+   }
+
+   &__title {
+      margin-bottom: 42px;
+   }
+
+   &__row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      padding: 20px 10px;
+      border-radius: 20px;
+      background: linear-gradient(180deg, rgba(43, 41, 74, 0.5) 0%, rgba(43, 41, 74, 0.1) 67.26%);
+   }
+
+   &__column {
+      flex: 1 0 calc(50% - 32px);
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   &__image {
+      margin-bottom: 16px;
+      img {
+         width: 80px;
+         height: 80px;
+      }
+   }
+
+   &__text {
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+   }
+}
+
+@media (min-width: 768px) {
+   .advantages {
+      &__container {
+         padding: 0 40px 30px;
+      }
+      &__row {
+         padding: 20px 20px;
+      }
+      &__column {
+         flex: 1 0 calc(25% - 32px);
+      }
+      &__text {
+         max-width: 160px;
+         font-size: 14px;
+         line-height: 17px;
+      }
+   }
+}
+@media (min-width: 1160px) {
+   .advantages {
+      &__container {
+         padding: 0 40px 64px;
+      }
+      &__text {
+         font-size: 18px;
+         line-height: 22px;
+      }
+      &__row {
+         padding: 40px 27px;
+         gap: 0;
+      }
+      &__column {
+         flex: 1 0 25%;
+      }
+      &__text {
+         max-width: 245px;
+      }
+      &__image {
+         img {
+            width: auto;
+            height: auto;
+         }
+      }
+   } 
+}

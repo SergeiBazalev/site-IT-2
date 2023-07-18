@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+   "title":"VARDAR"
+})
+<body>
+   @@include('html/header.html', {}) 
+   <main>
+      @@include('html/main-block.html', {}) 
+       <div class="description">
+         <div class="wrapper">
+            <div class="description__container">
+               <div class="description__content">
+                  <p class="description__content_text">
+                     Мы обладаем значительным опытом в развертывании видеостриминговых сервисов, 
+                     владеем низкоуровневым программированием для специализированных устройств связи и кассового оборудования. 
+                     Мы всегда открыты для новых вызовов и рассматриваем каждую задачу как возможность для роста. 
+                     Готовы предоставить полный цикл реализации проекта, делиться нашей экспертизой и обеспечивать 
+                     достижение поставленных бизнес-целей.
+                  </p>
+               </div>
+               <div class="description__caption">
+                  <div class="description__caption_icon">
+                     <img src="@img/icons/advantages/shield.svg" alt="Logo">
+                  </div>
+                  <p class="description__caption_name">Команда IT</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="stack">
+         <div class="wrapper">
+            <div class="stack__container">
+               <h3 class="stack__title title">Стек технологий</h3>
+               <div class="stack__scroll">
+                     <div class="stack__row">
+                        <div class="stack__border">
+                           <div class="stack__column">
+                              <div class="stack__image">
+                                 <img src="@img/icons/stack/tv.svg" alt="Стек технологий">
+                              </div>
+                              <p class="stack__text">
+                                 Разрабатываем программное обеспечение для специализированных устройств связи.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="stack__border">
+                           <div class="stack__column">
+                              <div class="stack__image">
+                                 <img src="@img/icons/stack/soft.svg" alt="Soft">
+                              </div>
+                              <p class="stack__text">
+                                 Организуем техническую поддержку и эксплуатацию инфраструктуры, 
+                                 внедряем ПО и процессы для самостоятельного использования.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="stack__border">
+                           <div class="stack__column">
+                              <div class="stack__image">
+                                 <img src="@img/icons/stack/soft_dev.svg" alt="Soft">
+                              </div>
+                              <p class="stack__text">
+                                 Мы специализируемся на разработке программного
+                                 обеспечения для комплексного управления инфраструктурой с учетом особенностей вашего бизнеса.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="stack__border">
+                           <div class="stack__column">
+                              <div class="stack__image">
+                                 <img src="@img/icons/stack/prod.svg" alt="Prod">
+                              </div>
+                              <p class="stack__text">
+                                 Выпускаем узкопрофильное ПО для автоматизации финансового блока
+                                 и риск – менеджмента с помощью внедрения промышленных систем, в том числе 
+                                 собственной разработки.
+
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               <p class="stack__caption">
+                  Мы обеспечим полный цикл разработки — от проектирования архитектурного решения до 
+                  проведения нагрузочного тестирования и ввода в промышленную эксплуатацию, включая обучение сотрудников.
+                  Все наши проекты содержат детальную документацию бизнес-аналитиков, автотесты от высококлассных QA-инженеров 
+                  и рекомендации по эксплуатации. Мы также предоставляем техподдержку 24/7. Наша команда готова предоставить комплексные 
+                  решения для успешной реализации ваших проектов.
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="advantages" id="advantages">
+         <div class="wrapper">
+            <div class="advantages__container">
+               <h3 class="advantages__title title">Преимущества</h3>
+               <div class="advantages__row">
+                  <div class="advantages__column">
+                     <div class="advantages__image">
+                        <img src="@img/icons/advantages/shield.svg" alt="Logo">
+                     </div>
+                     <p class="advantages__text">Более <span id="numberOfYear"></span> лет <br>
+                        на рынке</p>
+                  </div>
+                  <div class="advantages__column">
+                     <div class="advantages__image">
+                        <img src="@img/icons/advantages/500_proj.svg" alt="Logo">
+                     </div>
+                     <p class="advantages__text">Выполнили более <br>
+                        1500 проектов</p>
+                  </div>
+                  <div class="advantages__column">
+                     <div class="advantages__image">
+                        <img src="@img/icons/advantages/support.svg" alt="Logo">
+                     </div>
+                     <p class="advantages__text">Оперативная <br>
+                        техническая поддержка</p>
+                  </div>
+                  <div class="advantages__column">
+                     <div class="advantages__image">
+                        <img src="@img/icons/advantages/infrastructure.svg" alt="Logo">
+                     </div>
+                     <p class="advantages__text">Построение
+                        инфраструктуры с нуля</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+   @@include('html/footer.html', {})
+   <script src="js/app.min.js"></script>
+</body>
+</html>

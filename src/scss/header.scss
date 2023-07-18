@@ -1,0 +1,124 @@
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   min-height: 46px;
+   margin: 10px 0 20px 0;
+   &__logo-img {
+      width: 50px;
+      height: auto;
+   }
+}
+
+.menu {
+   &__icon {
+      cursor: pointer;
+   }
+
+   &__body {
+      display: none;
+      position: absolute;
+      z-index: 3;
+      top: 57px;
+      right: 20px;
+      background:  linear-gradient(0deg, #F7114E 0%, rgba(247, 17, 78, 0) 57.06%);
+      border-radius: 28px;
+      font-size: 14px;
+
+      &.active {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         
+      }
+   }
+
+   &__list {
+      text-align: end;
+      margin: 1px;
+      padding: 20px;
+      background-color: $blue-600;
+      border-radius: 28px;
+
+      & li {
+         position: relative;
+         margin: 0 0 20px 0;
+         &:last-child {
+            margin-bottom: 0;
+         }   
+      }
+   }
+
+   &__link {
+      color: $white;
+   }
+}
+
+@media (min-width: 768px) {
+   .header {
+      margin: 10px 0 40px 0;
+      &__container {
+         padding: 0 40px;
+      }
+      &__logo-img {
+         width: 70px;
+         height: auto;
+      }
+   }
+   .menu__body {
+      right: 40px;
+   }
+   
+}
+
+@media (min-width: 1160px) {
+
+   .header{ 
+      margin: 21.5px 0 52.5px 0;
+      &__container {
+      padding: 40px 40px 0;
+      }
+      &__logo-img {
+         width: 100px;
+         height: auto;
+      }
+   }
+
+   .menu {
+      &__list{
+         display: flex;
+         align-items: center;
+         background-color: transparent;
+         padding: 0;
+
+         li {
+            position: static;
+            padding: 10px 0;
+            margin: 0 0 0 120px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+         }
+      }
+
+      &__icon {
+         display: none;
+      }
+
+      &__body {
+         position: static;
+         background: transparent;
+         width: auto;
+         padding: 0;
+         display: flex;
+         align-items: center;
+         font-size: 18px;
+   
+         &.active {
+            display: block;
+         }
+      }
+   }
+}
